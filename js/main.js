@@ -57,7 +57,7 @@ class UserDataTable {
             this.originalData = data;
             this.renderTable(data);
         } catch (error) {
-            this.showError('Error loading data. Please try again later.');
+            this.showError('Ошибка загрузки данных');
             console.error('Error:', error);
         }
     }

@@ -1,0 +1,76 @@
+.sort-icon {
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px !important;
+}
+
+.sort-icon::after {
+    font-family: "bootstrap-icons";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    content: "\F127";
+}
+
+.sort-icon.asc::after {
+    content: "\F148";
+    opacity: 1;
+}
+
+.sort-icon.desc::after {
+    content: "\F128";
+    opacity: 1;
+}
+
+
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.input-group {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-right: none;
+}
+
+#searchInput {
+    border-left: none;
+}
+
+#searchInput:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.table thead th {
+    border-bottom: none;
+    position: relative;
+}
+
+.table thead th i {
+    opacity: 0.8;
+}
+
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+.loading-state,
+.error-state,
+.empty-state {
+    padding: 2rem 0;
+}
+
+.error-state {
+    color: #dc3545;
+}
+
+.empty-state {
+    color: #6c757d;
+}

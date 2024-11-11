@@ -82,7 +82,7 @@ class UserDataTable {
             <tr>
                 <td colspan="3" class="text-center loading-state">
                     <i class="bi bi-arrow-repeat spinner-border text-dark"></i>
-                    <p class="mt-2 mb-0">Loading data...</p>
+                    <p class="mt-2 mb-0">Загрузка ...</p>
                 </td>
             </tr>
         `;
@@ -170,7 +170,7 @@ class UserDataTable {
 
         clearTimeout(this.searchTimeout);
 
-        if (searchTerm.length === 0) {
+        if (searchTerm.length < 3) {
             this.loadData();
             return;
         }
